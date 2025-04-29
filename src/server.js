@@ -1,6 +1,6 @@
 const express = require("express");
-
 const app = express();
+
 
 
 app.get ("/", function(req, res){
@@ -17,7 +17,7 @@ app.get ("/contatos", function(req, res){
 });
 
 
-
+const PORT = 9191;
 app.listen(9091, function(){
     console.log("Servidor on em porta 9091")
 })
