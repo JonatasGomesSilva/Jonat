@@ -4,12 +4,12 @@ const app = express();
 
 
 app.get ("/", function(req, res){
-    res.send("oi!");
+    res.send("Servidor funcionando!");
 
 });
 
-app.get ("/sobre", function(req, res){
-    res.send("Bem-vindos a minha página !");
+app.get ("/despesas", function(req, res){
+    res.sendFile(__dirname + "");
 });
 
 app.get ("/contatos", function(req, res){
@@ -17,7 +17,7 @@ app.get ("/contatos", function(req, res){
 });
 
 
-const PORT = 9091;
-app.listen(9091, function(){
-    console.log("Servidor on em porta 9091")
+const PORT = 3000;
+app.listen(3000, function(){
+    console.log("Servidor on em porta 3000")
 })
